@@ -5,16 +5,26 @@
   <title>Marvins Rückenkratzstudio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-        body {
-            background-color: purple; /* oder z.B. #800080 */
-            color: white; /* Textfarbe anpassen, damit es gut lesbar ist */
-        }
-    </style>
+    body {
+      background-color: purple;
+      color: white;
+      margin: 0;        /* Rand entfernen */
+      padding: 20px;    /* etwas Innenabstand */
+      font-family: Arial, sans-serif;
+    }
+    img {
+      max-width: 100%;  /* Bild passt sich der Bildschirmbreite an */
+      height: auto;     /* Höhe proportional */
+      display: block;   /* Block-Element, vermeidet Probleme im Inline-Kontext */
+      margin: 20px 0;   /* Abstand ober- und unterhalb des Bildes */
+    }
+  </style>
 </head>
 <body>
   <h1>Marvins Rückenkratzstudio</h1>
-  <p>Ein Ort der warm und gemütlich ist, der dir dabei hilft an stellen zu kommen die ohne Hilfe nicht selbst erreichst, um dich weiter zu entdecken, den Blickwinkel zu wechseln oder neue Perspektiven zu erlangen. Alles ist möglich an diesem Ort, alles was DU dir vorstellen kannst und noch ein bisschen mehr.
-<img src="MARV.jpg" alt="EIN ORT IN DEINEM KOPF - VERBUNDEN MIT DEINEN SINNEN">
-    EIN ORT IN DEINEM KOPF - VERBUNDEN MIT DEINEN SINNEN</p>
+  <p>Ein Ort der warm und gemütlich ist, der dir dabei hilft an stellen zu kommen die ohne Hilfe nicht selbst erreichst, um dich weiter zu entdecken, den Blickwinkel zu wechseln oder neue Perspektiven zu erlangen. Alles ist möglich an diesem Ort, alles was DU dir vorstellen kannst und noch ein bisschen mehr.</p>
+  
+  <img src="MARV.jpg" alt="EIN ORT IN DEINEM KOPF - VERBUNDEN MIT DEINEN SINNEN" />
+  <p>EIN ORT IN DEINEM KOPF - VERBUNDEN MIT DEINEN SINNEN</p>
 </body>
 </html>
