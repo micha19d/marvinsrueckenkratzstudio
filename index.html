@@ -1,38 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <title>Marvins Rückenkratzstudio - Startseite</title>
+  <meta charset="utf-8">
+  <title>Marvins Rückenkratzstudio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
       background-color: purple;
       color: white;
-      margin: 0;
-      padding: 20px;
+      margin: 0;        /* Rand entfernen */
+      padding: 20px;    /* etwas Innenabstand */
       font-family: Arial, sans-serif;
     }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
+    img {
+      max-width: 100%;  /* Bild passt sich der Bildschirmbreite an */
+      height: auto;     /* Höhe proportional */
+      display: block;   /* Block-Element, vermeidet Probleme im Inline-Kontext */
+      margin: 20px 0;   /* Abstand ober- und unterhalb des Bildes */
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">Startseite</a> |
-    <a href="snake.html">Snake-Spiel</a>
-  </nav>
+  <a href="index.html">Startseite</a> |
+  <a href="snake.html">Snake-Spiel</a> |
+  <a href="fresstival2026.html>Fresstival 2026</a>
+</nav>
+<hr>
+  <h1>Marvins Rückenkratzstudio</h1>
+  <p>Ein Ort der warm und gemütlich ist, der dir dabei hilft an stellen zu kommen die ohne Hilfe nicht selbst erreichst, um dich weiter zu entdecken, den Blickwinkel zu wechseln oder neue Perspektiven zu erlangen. Alles ist möglich an diesem Ort, alles was DU dir vorstellen kannst und noch ein bisschen mehr.</p>
+  
+  <img src="MARV.jpg" alt="EIN ORT IN DEINEM KOPF - VERBUNDEN MIT DEINEN SINNEN" />
+  <p>EIN ORT IN DEINEM KOPF - VERBUNDEN MIT DEINEN SINNEN</p>
+  
+  <canvas id="game" width="400" height="400"></canvas>
 
-  <h1>Willkommen bei Marvins Rückenkratzstudio</h1>
-  <p>Hier findest du alle Infos und kleine Überraschungen.</p>
-
-  <img src="MARV.jpg" alt="EIN ORT IN DEINEM KOPF - VERBUNDEN MIT DEINEN SINNEN" style="max-width:100%; height:auto;">
-
+  <script src="snake.js"></script>
 </body>
 </html>
